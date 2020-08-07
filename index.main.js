@@ -17,10 +17,10 @@ function showTime() {
 
     document.getElementById("local-time").innerHTML =
         now.getFullYear() + "/" +
-        now.getMonth() + "/" +
-        now.getDay() + "/" +
+        padding(now.getMonth()) + "/" +
+        padding(now.getDay()) +
         " - " +
-        now.getHours() + ":" +
+        padding(now.getHours()) + ":" +
         padding(now.getMinutes()) + ":" +
         padding(now.getSeconds());
     

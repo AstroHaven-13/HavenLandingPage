@@ -19,7 +19,11 @@ body {
     position: absolute;
     display: block;
     top: 50%; left: 50%;
-    transform: rotate3d(0.1,1,-0.1, 20deg);
+    transform-origin: top left;
+    transform:
+    scale(1.2)
+    rotate3d(0.1,1,-0.1, 20deg)
+    ;
 }
 
 .fake-body {
