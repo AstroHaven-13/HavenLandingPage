@@ -3,6 +3,10 @@ body {
     overflow: hidden;
 }
 
+#local-time {
+    display: inline;
+}
+
 .container#main {
     min-width: none;
     max-width: none;
