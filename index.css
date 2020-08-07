@@ -1,0 +1,69 @@
+body {
+    background-color: #010101;
+    overflow: hidden;
+}
+
+.container#main {
+    min-width: none;
+    max-width: none;
+    padding: 0;
+    width: 540px;
+}
+
+.master-plane {
+    width: 640px; height: 480px;
+    position: absolute;
+    display: block;
+    top: 50%; left: 50%;
+    transform: rotate3d(0.1,1,-0.1, 20deg);
+}
+
+.fake-body {
+    width: 100%; height: 100%;
+    background-color:darkblue;
+    position: relative;
+    bottom: 50%; right: 50%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.screen-mask {
+    display: block;
+    position: absolute;
+    bottom: 50%; right: 50%;
+    background-image: url(./screen-mask.png);
+    background-size: 3px;
+    width: inherit;
+    height: inherit;
+    z-index: 2;
+    pointer-events: none;
+}
+.screen-scanline {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top,
+    rgba(20,20,20,0.15), 
+     transparent);
+     animation: size 0.32s infinite linear;
+}
+@keyframes size {
+    to {
+        background-position-y: -1000px;
+    }
+}
+
+hr {
+    width: inherit;
+    margin: inherit 0;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+}
+
+footer {
+    margin:auto;
+    padding:auto;
+    border:0;
+    width:inherit;
+    position: absolute;
+    bottom: 0%;
+}
