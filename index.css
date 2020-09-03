@@ -50,7 +50,7 @@ body {
     width: inherit;
     height: inherit;
     background: linear-gradient(to top,
-    rgba(20,20,20,0.15), 
+    rgba(20,20,20,0.05), 
      transparent);
      animation: size 0.32s infinite linear;
 }
